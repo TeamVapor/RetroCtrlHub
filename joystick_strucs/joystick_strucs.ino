@@ -236,7 +236,7 @@ void loop()
       else
       {
         Keyboard.press(KEYPAD_2);
-        Keyboard.release(KEY_ESC);
+       // Keyboard.release(KEY_ESC);
       }
     }
     else
