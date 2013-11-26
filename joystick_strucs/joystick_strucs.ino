@@ -209,96 +209,96 @@ void loop()
   if (state1.b != state2.b)
   {
     if(state2.b)
-      Joystick.button(1, 1);
+      Keyboard.press(KEY_SPACE);
     else
-      Joystick.button(1, 0);
+      Keyboard.release(KEY_SPACE);
   }
   if (state1.y != state2.y)
   {
     if(state2.y)
-      Joystick.button(2,1);
+      Keyboard.press(KEYPAD_3);
     else
-      Joystick.button(2,0);
+      Keyboard.release(KEYPAD_3);
   }
   if (state1.SELECT != state2.SELECT)
   {
     if(state2.SELECT)
-      Joystick.button(3,1);
+      Keyboard.press(KEYPAD_1);
     else
-      Joystick.button(3,0);
+      Keyboard.release(KEYPAD_1);
   }
   if (state1.START != state2.START)
   {
     if(state2.START)
     {
       if(state2.SELECT)
-        Joystick.button(31,1);
+        Keyboard.press(KEY_ESC);
       else
       {
-        Joystick.button(4,1);
-        Joystick.button(31,0);
+        Keyboard.press(KEYPAD_2);
+        Keyboard.release(KEY_ESC);
       }
     }
     else
     {
-      Joystick.button(4,0);
-      Joystick.button(31,0);
+      Keyboard.release(KEYPAD_2);
+      Keyboard.release(KEY_ESC);
     }
   }
   if (state1.up != state2.up)
   {
     if(state2.up)
-      Joystick.button(5,1);
+      Keyboard.press(KEY_UP);
     else
-      Joystick.button(5,0);
+      Keyboard.release(KEY_UP);
   }
   if (state1.down != state2.down)
   {
     if(state2.down)
-      Joystick.button(6,1);
+      Keyboard.press(KEY_DOWN);
     else
-      Joystick.button(6,0);
+      Keyboard.release(KEY_DOWN);
   }
   if (state1.left != state2.left)
   {
     if(state2.left)
-      Joystick.button(7,1);
+      Keyboard.press(KEY_LEFT);
     else
-      Joystick.button(7,0);
+      Keyboard.release(KEY_LEFT);
   }
   if (state1.right != state2.right)
   {
     if(state2.right)
-      Joystick.button(8,1);
+      Keyboard.press(KEY_RIGHT);
     else
-      Joystick.button(8,0);
+      Keyboard.release(KEY_RIGHT);
   }
   if (state1.a != state2.a)
   {
     if(state2.a)
-      Joystick.button(9,1);
+      Keyboard.press(KEY_ENTER);
     else
-      Joystick.button(9,0);
+      Keyboard.release(KEY_ENTER);
   }
   if (state1.x != state2.x)
   {
     if(state2.x)
-      Joystick.button(10,1);
+      Keyboard.press(KEY_RETURN);
     else
-      Joystick.button(10,0);
+      Keyboard.release(KEY_RETURN);
   }
   if (state1.l != state2.l)
   {
     if(state2.l)
-      Joystick.button(11,1);
+      Keyboard.press(KEYPAD_4);
     else
-      Joystick.button(11,0);
+      Keyboard.release(KEYPAD_4);
   }
   if (state1.r != state2.r)
   {
     if(state2.r)
-      Joystick.button(12,1);
+      Keyboard.press(KEYPAD_5);
     else
-      Joystick.button(12,0);
+      Keyboard.release(KEYPAD_5);
   }
 }
